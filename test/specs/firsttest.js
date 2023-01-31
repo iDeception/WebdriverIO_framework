@@ -12,7 +12,7 @@ describe('Smoke Test', async () => {
         const actualUsername = await $('//strong[@class="css-truncate-target"]').getText()
         expect(loggedinUser).to.equal(actualUsername)
     });
-    it("Create a new repository", async () => {
+    // it("Create a new repository", async () => {
 
-    })
+    // })
 })

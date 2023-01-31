@@ -15,7 +15,6 @@
     "wdio": "wdio run ./wdio.conf.js"
   },
   "dependencies": {
-    "chai": "^4.3.7",
-    "chai-webdriverio": "^1.0.0"
+    "chai": "^4.3.7"
   }
 }
