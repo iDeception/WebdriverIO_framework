@@ -1,26 +1,47 @@
 import { expect } from "chai";
 import { faker } from "@faker-js/faker";
-const randomWord = faker.word.noun(7);
+const repositoryName = faker.word.noun(7);
+const newRepositoryName = faker.word.noun(8);
 
-describe("Repository", async () => {
-  beforeEach(async () => {
+describe("Repository only", async () => {
+  before(async () => {
     await browser.maximizeWindow();
-    await browser.url("https://github.com/login");
+    await browser.url("https://github.com");
+    await $('//a[@href="/login"]').click();
     await $('input[id="login_field"]').setValue("evgeni.samoilenka@gmail.com");
     await $('input[id="password"]').setValue("pkjqhjr3816");
     await $('input[value = "Sign in"]').click();
-  });
-
-  it("Should be created a new repository", async () => {
     await $(
       '//div[@data-target="loading-context.details"]//a[@class="btn btn-sm btn-primary"]'
     ).click();
-    await $('input[id="repository_name"]').setValue(randomWord);
+    await $('input[id="repository_name"]').setValue(repositoryName);
     await $('input[id="repository_description"]').setValue(
       "This is test repository!"
     );
     await $('input[id="repository_auto_init"]').click();
-    await browser.pause(3000);
+    await $('//button[contains(text(),"Create repository")]').waitForEnabled({
+      timeout: 2000,
+    });
     await $('//button[contains(text(),"Create repository")]').click();
+  });
+
+  it("Should verify if a repository was created", async () => {
+    const actualRepositoryName = await $(
+      '//strong[@itemprop="name"]/a[@href]'
+    ).getText();
+    expect(actualRepositoryName).to.equal(repositoryName);
+  });
+
+  it("Should rename repository and verify if it was renamed", async () => {
+    await $('[id="settings-tab"]').click();
+    await $('//input[@id="rename-field"]').setValue(newRepositoryName);
+    await $(
+      '//button[@type="submit" and contains(text(),"Rename")]'
+    ).waitForEnabled({ timeout: 2000 });
+    await $('//button[@type="submit" and contains(text(),"Rename")]').click();
+    const actualRepositoryName = await $(
+      '//strong[@itemprop="name"]/a[@href]'
+    ).getText();
+    expect(actualRepositoryName).to.equal(newRepositoryName);
   });
 });

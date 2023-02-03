@@ -2,9 +2,10 @@ import { expect } from "chai";
 const loggedinUser = "iDeception";
 
 describe("Login", async () => {
-  beforeEach(async () => {
+  before(async () => {
     await browser.maximizeWindow();
-    await browser.url("https://github.com/login");
+    await browser.url("https://github.com");
+    await $('//a[@href="/login"]').click();
     await $('input[id="login_field"]').setValue("evgeni.samoilenka@gmail.com");
     await $('input[id="password"]').setValue("pkjqhjr3816");
     await $('input[value = "Sign in"]').click();
@@ -19,4 +20,3 @@ describe("Login", async () => {
     await $('//button[contains(text(),"Sign out")]').click();
   });
 });
-
