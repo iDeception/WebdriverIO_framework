@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { faker } from "@faker-js/faker";
-const repositoryName = faker.word.noun(7);
-const newRepositoryName = faker.word.noun(8);
+const repositoryName = faker.word.noun(9);
+const newRepositoryName = faker.word.noun(10);
 
 describe("Repository only", async () => {
   before(async () => {
@@ -32,7 +32,7 @@ describe("Repository only", async () => {
     expect(actualRepositoryName).to.equal(repositoryName);
   });
 
-  it("Should rename repository and verify if it was renamed", async () => {
+  it("Should rename repository and verify that it was renamed", async () => {
     await $('[id="settings-tab"]').click();
     await $('//input[@id="rename-field"]').setValue(newRepositoryName);
     await $(
@@ -43,5 +43,29 @@ describe("Repository only", async () => {
       '//strong[@itemprop="name"]/a[@href]'
     ).getText();
     expect(actualRepositoryName).to.equal(newRepositoryName);
+  });
+
+  it("Should delete repository and verify that it was deleted", async () => {
+    await $('[id="settings-tab"]').click();
+    // const delRepositoryName = await $(
+    //   '//div[@class="Box-body overflow-auto"]/p[contains(text(),"Please type")]/strong[contains(text(),"iDeception")]'
+    // ).getText();
+    await $('//summary[contains(text(),"Delete this repository")]').click();
+    await $(
+      '//details-dialog[@aria-label="Delete repository"]'
+    ).waitForDisplayed({ timeout: 3000 });
+    const getUser = await $('//a[@class="url fn"]').getText();
+    const getAttr = await $("//dd/input[@type]").getAttribute("value");
+    await $(
+      '//input[@aria-label="Type in the name of the repository to confirm that you want to delete this repository."]'
+    ).setValue(getUser + "/" + getAttr);
+    await $(
+      '//button[@class="btn-danger btn btn-block"][not(@disabled)]'
+    ).click();
+    const actualMessage = await $('//div[@role="alert"]').getText();
+    expect(actualMessage)
+      .to.include(getUser)
+      .and.to.include(getAttr)
+      .and.to.include("was successfully deleted.");
   });
 });
