@@ -53,19 +53,18 @@ describe("Repository only", async () => {
     await $('//summary[contains(text(),"Delete this repository")]').click();
     await $(
       '//details-dialog[@aria-label="Delete repository"]'
-    ).waitForDisplayed({ timeout: 3000 });
-    const getUser = await $('//a[@class="url fn"]').getText();
-    const getAttr = await $("//dd/input[@type]").getAttribute("value");
+    ).waitForDisplayed();
+    const getUserName = await $('//a[@class="url fn"]').getText();
+    const getRepoName = await $("//dd/input[@type]").getAttribute("value");
     await $(
       '//input[@aria-label="Type in the name of the repository to confirm that you want to delete this repository."]'
-    ).setValue(getUser + "/" + getAttr);
+    ).setValue(getUserName + "/" + getRepoName);
     await $(
       '//button[@class="btn-danger btn btn-block"][not(@disabled)]'
     ).click();
     const actualMessage = await $('//div[@role="alert"]').getText();
     expect(actualMessage)
-      .to.include(getUser)
-      .and.to.include(getAttr)
+      .to.include(getRepoName)
       .and.to.include("was successfully deleted.");
   });
 });
