@@ -47,9 +47,6 @@ describe("Repository only", async () => {
 
   it("Should delete repository and verify that it was deleted", async () => {
     await $('[id="settings-tab"]').click();
-    // const delRepositoryName = await $(
-    //   '//div[@class="Box-body overflow-auto"]/p[contains(text(),"Please type")]/strong[contains(text(),"iDeception")]'
-    // ).getText();
     await $('//summary[contains(text(),"Delete this repository")]').click();
     await $(
       '//details-dialog[@aria-label="Delete repository"]'
@@ -62,9 +59,17 @@ describe("Repository only", async () => {
     await $(
       '//button[@class="btn-danger btn btn-block"][not(@disabled)]'
     ).click();
+
+    // const element = await $$(
+    //   '//*[@id="user-repositories-list"]//a[@itemprop = "name codeRepository"]'
+    // );
+    // const text = element.map((x) => x.getText());
+    // console.dir(text);
+    // expect(text.indexOf("Course-Repository") == -1).to.be.true;
+
     const actualMessage = await $('//div[@role="alert"]').getText();
-    expect(actualMessage)
-      .to.include(getRepoName)
-      .and.to.include("was successfully deleted.");
+    expect(actualMessage).to.equal(
+      `Your repository "${getUserName}/${getRepoName}" was successfully deleted.`
+    );
   });
 });
