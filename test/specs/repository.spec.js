@@ -1,20 +1,15 @@
 import { expect } from "chai";
 import { faker } from "@faker-js/faker";
+import mainPage from "../../pageobjects/mainPage.js";
+import fakeRepositoryNames from "../../testData/fakeRepositoryNames.js";
 const repositoryName = faker.word.noun(9);
 const newRepositoryName = `${repositoryName}_renamed`;
 
 describe("Repository", async () => {
   before(async () => {
-    await browser.maximizeWindow();
-    await browser.url("https://github.com");
-    await $('//a[@href="/login"]').click();
-    await $('input[id="login_field"]').setValue("evgeni.samoilenka@gmail.com");
-    await $('input[id="password"]').setValue("pkjqhjr3816");
-    await $('input[value = "Sign in"]').click();
-    await $(
-      '//div[@data-target="loading-context.details"]//a[@class="btn btn-sm btn-primary"]'
-    ).click();
-    await $('input[id="repository_name"]').setValue(repositoryName);
+    await loginPage.login();
+    await mainPage.createNewRepository();
+    await newRepositoryName.repositoryName().setValue(fakeRepositoryNames);
     await $('input[id="repository_description"]').setValue(
       "This is test repository!"
     );

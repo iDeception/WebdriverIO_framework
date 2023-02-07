@@ -5,12 +5,12 @@ const selectors = {
   signinButton: 'input[value = "Sign in"]',
 };
 
-async function login() {
+async function login(login, password) {
   await browser.maximizeWindow();
   await browser.url("https://github.com");
   await $(selectors.loginButton).click();
-  await $(selectors.emailField).setValue(creds.LOGIN);
-  await $(selectors.passwordField).setValue(creds.PASSWORD);
+  await $(selectors.emailField).setValue(login);
+  await $(selectors.passwordField).setValue(password);
   await $(selectors.signinButton).click();
 }
 
