@@ -1,9 +1,9 @@
 import { expect } from "chai";
 import { faker } from "@faker-js/faker";
 const repositoryName = faker.word.noun(9);
-const newRepositoryName = faker.word.noun(10);
+const newRepositoryName = `${repositoryName}_renamed`;
 
-describe("Repository only", async () => {
+describe("Repository", async () => {
   before(async () => {
     await browser.maximizeWindow();
     await browser.url("https://github.com");
@@ -60,12 +60,12 @@ describe("Repository only", async () => {
       '//button[@class="btn-danger btn btn-block"][not(@disabled)]'
     ).click();
 
-    // const element = await $$(
-    //   '//*[@id="user-repositories-list"]//a[@itemprop = "name codeRepository"]'
-    // );
-    // const text = element.map((x) => x.getText());
-    // console.dir(text);
-    // expect(text.indexOf("Course-Repository") == -1).to.be.true;
+    const element = await $$(
+      '//*[@id="user-repositories-list"]//a[@itemprop = "name codeRepository"]'
+    );
+    const text = element.map((x) => x.getText());
+    const text2 = await Promise.all(text);
+    expect(text2.indexOf(newRepositoryName) == -1).to.be.true;
 
     const actualMessage = await $('//div[@role="alert"]').getText();
     expect(actualMessage).to.equal(

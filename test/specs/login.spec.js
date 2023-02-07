@@ -1,22 +1,16 @@
 import { expect } from "chai";
+import loginPage from "../../pageobjects/loginPage";
+import mainPage from "../../pageobjects/mainPage";
 const loggedinUser = "iDeception";
 
-describe("Login", async () => {
+describe("Login only", async () => {
   before(async () => {
-    await browser.maximizeWindow();
-    await browser.url("https://github.com");
-    await $('//a[@href="/login"]').click();
-    await $('input[id="login_field"]').setValue("evgeni.samoilenka@gmail.com");
-    await $('input[id="password"]').setValue("pkjqhjr3816");
-    await $('input[value = "Sign in"]').click();
+    await loginPage.login();
   });
 
   it("Shoud be correct user after login", async () => {
-    await $('//summary[@aria-label="View profile and more"]').click();
-    const actualUsername = await $(
-      '//strong[@class="css-truncate-target"]'
-    ).getText();
+    await mainPage.openDropdownMenu();
+    const actualUsername = await mainPage.getActualUserName();
     expect(loggedinUser).to.equal(actualUsername);
-    await $('//button[contains(text(),"Sign out")]').click();
   });
 });
