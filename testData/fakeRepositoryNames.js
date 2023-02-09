@@ -1,7 +1,7 @@
 import { faker } from "@faker-js/faker";
-const fakeRepositoryNames = {
-  REPOSITORY_NAME: faker.word.noun(9),
-  NEW_REPOSITORY_NAME: `${repositoryName}_renamed`,
+const fakeNames = {
+  REPOSITORY_NAME: faker.word.noun(8),
+  NEW_REPOSITORY_NAME: faker.word.noun(9),
 };
 
-export default fakeRepositoryNames;
+export default fakeNames;

@@ -1,17 +1,17 @@
 const selectors = {
-  loginButton: '//a[@href="/login"]',
-  emailField: 'input[id="login_field"]',
-  passwordField: 'input[id="password"]',
-  signinButton: 'input[value = "Sign in"]',
+  LOGIN_BUTTON: '//a[@href="/login"]',
+  EMAIL_FIELD: 'input[id="login_field"]',
+  PASSWORD_FIELD: 'input[id="password"]',
+  SIGNIN_BUTTON: 'input[value = "Sign in"]',
 };
 
 async function login(login, password) {
   await browser.maximizeWindow();
   await browser.url("https://github.com");
-  await $(selectors.loginButton).click();
-  await $(selectors.emailField).setValue(login);
-  await $(selectors.passwordField).setValue(password);
-  await $(selectors.signinButton).click();
+  await $(selectors.LOGIN_BUTTON).click();
+  await $(selectors.EMAIL_FIELD).setValue(login);
+  await $(selectors.PASSWORD_FIELD).setValue(password);
+  await $(selectors.SIGNIN_BUTTON).click();
 }
 
 const loginPage = { login };
