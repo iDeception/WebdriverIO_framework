@@ -1,46 +1,39 @@
 import { expect } from "chai";
-import { faker } from "@faker-js/faker";
 import loginPage from "../../pageobjects/loginPage.js";
 import creds from "../../testData/creds.js";
 import mainPage from "../../pageobjects/mainPage.js";
-import newRepositoryPage from "../../pageobjects/newRepositoryPage.js";
+import createRepositoryPage from "../../pageobjects/createRepositoryPage.js";
 import fakeNames from "../../testData/fakeRepositoryNames.js";
+import { repositoryDecription } from "../../testData/repositoryDescription.js";
+import repositorySettingsPage from "../../pageobjects/repositorySettingsPage.js";
+import repositoryPage from "../../pageobjects/repositoryPage.js";
 
 describe("Repository only", async () => {
   before(async () => {
     await loginPage.login(creds.LOGIN, creds.PASSWORD);
     await mainPage.createNewRepository();
-    await newRepositoryPage.enterRepositoryName(fakeNames.REPOSITORY_NAME);
-    await $('input[id="repository_description"]').setValue(
-      "This is test repository!"
-    );
-    await $('input[id="repository_auto_init"]').click();
-    await $('//button[contains(text(),"Create repository")]').waitForEnabled({
-      timeout: 2000,
-    });
-    await $('//button[contains(text(),"Create repository")]').click();
+    await createRepositoryPage.enterRepositoryName(fakeNames.REPOSITORY_NAME);
+    await createRepositoryPage.enterRepositoryDescription(repositoryDecription);
+    await createRepositoryPage.clickReadmeCheckbox();
+    await createRepositoryPage.clickCreateRepository();
   });
 
-  // it("Should verify if a repository was created", async () => {
-  //   const actualRepositoryName = await $(
-  //     '//strong[@itemprop="name"]/a[@href]'
-  //   ).getText();
-  //   const repositoryName = await ;
-  //   expect(actualRepositoryName).to.equal(repositoryName);
-  // });
+  it("Should verify if a repository was created", async () => {
+    const actualRepositoryName = await repositoryPage.getActualRepositoryName();
+    expect(actualRepositoryName).to.equal(fakeNames.REPOSITORY_NAME);
+    console.log("Original repository name was " + fakeNames.REPOSITORY_NAME);
+    console.log("Actual repository name is " + actualRepositoryName);
+  });
 
-  // it("Should rename repository and verify that it was renamed", async () => {
-  //   await $('[id="settings-tab"]').click();
-  //   await $('//input[@id="rename-field"]').setValue(newRepositoryName);
-  //   await $(
-  //     '//button[@type="submit" and contains(text(),"Rename")]'
-  //   ).waitForEnabled({ timeout: 2000 });
-  //   await $('//button[@type="submit" and contains(text(),"Rename")]').click();
-  //   const actualRepositoryName = await $(
-  //     '//strong[@itemprop="name"]/a[@href]'
-  //   ).getText();
-  //   expect(actualRepositoryName).to.equal(newRepositoryName);
-  // });
+  it("Should rename repository and verify that it was renamed", async () => {
+    await repositorySettingsPage.clickSettingsTab();
+    await repositorySettingsPage.enterNewRepositoryName(fakeNames.NEW_REPOSITORY_NAME);
+    await repositorySettingsPage.clickRenameButton();
+    const actualRepositoryName = await repositoryPage.getActualRepositoryName();
+    expect(actualRepositoryName).to.equal(fakeNames.NEW_REPOSITORY_NAME);
+    console.log("Repository name was changed to " + fakeNames.NEW_REPOSITORY_NAME);
+    console.log("Actual repository name is " + actualRepositoryName);
+  });
 
   // it("Should delete repository and verify that it was deleted", async () => {
   //   await $('[id="settings-tab"]').click();
