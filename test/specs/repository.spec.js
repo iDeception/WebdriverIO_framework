@@ -7,6 +7,7 @@ import fakeNames from "../../testData/fakeRepositoryNames.js";
 import { repositoryDecription } from "../../testData/repositoryDescription.js";
 import repositorySettingsPage from "../../pageobjects/repositorySettingsPage.js";
 import repositoryPage from "../../pageobjects/repositoryPage.js";
+import allRepositoriesPage from "../../pageobjects/allRepositoriesPage.js";
 
 describe("Repository only", async () => {
   before(async () => {
@@ -35,31 +36,18 @@ describe("Repository only", async () => {
     console.log("Actual repository name is " + actualRepositoryName);
   });
 
-  // it("Should delete repository and verify that it was deleted", async () => {
-  //   await $('[id="settings-tab"]').click();
-  //   await $('//summary[contains(text(),"Delete this repository")]').click();
-  //   await $(
-  //     '//details-dialog[@aria-label="Delete repository"]'
-  //   ).waitForDisplayed();
-  //   const getUserName = await $('//a[@class="url fn"]').getText();
-  //   const getRepoName = await $("//dd/input[@type]").getAttribute("value");
-  //   await $(
-  //     '//input[@aria-label="Type in the name of the repository to confirm that you want to delete this repository."]'
-  //   ).setValue(getUserName + "/" + getRepoName);
-  //   await $(
-  //     '//button[@class="btn-danger btn btn-block"][not(@disabled)]'
-  //   ).click();
-
-  //   const element = await $$(
-  //     '//*[@id="user-repositories-list"]//a[@itemprop = "name codeRepository"]'
-  //   );
-  //   const text = element.map((x) => x.getText());
-  //   const text2 = await Promise.all(text);
-  //   expect(text2.indexOf(newRepositoryName) == -1).to.be.true;
-
-  //   const actualMessage = await $('//div[@role="alert"]').getText();
-  //   expect(actualMessage).to.equal(
-  //     `Your repository "${getUserName}/${getRepoName}" was successfully deleted.`
-  //   );
-  // });
+  it("Should delete repository and verify that it was deleted", async () => {
+    await repositorySettingsPage.clickSettingsTab();
+    await repositorySettingsPage.clickDeleteRepositoryButton();
+    const getUserName = await repositorySettingsPage.getActualUserName();
+    const getRepoName = await repositorySettingsPage.getCurrentRepositoryName();
+    await repositorySettingsPage.enterConfirmationText(getUserName + "/" + getRepoName);
+    await repositorySettingsPage.confirmRepositoryDeletion();
+    const element = await allRepositoriesPage.getRepositoriesList();
+    const text = element.map((x) => x.getText());
+    const text2 = await Promise.all(text);
+    expect(text2.indexOf(newRepositoryName) == -1).to.be.true;
+    const actualMessage = await allRepositoriesPage.getDeletionConfirmationMessage();
+    expect(actualMessage).to.equal(`Your repository "${getUserName}/${getRepoName}" was successfully deleted.`);
+  });
 });
