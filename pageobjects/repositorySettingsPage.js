@@ -29,11 +29,11 @@ async function clickDeleteRepositoryButton() {
 }
 
 async function getActualUserName() {
-  return await $(selectors.CURRENT_USER_NAME).getText();
+  return $(selectors.CURRENT_USER_NAME).getText();
 }
 
 async function getCurrentRepositoryName() {
-  return await $(selectors.CURRENT_REPOSITORY_NAME).getAttribute("value");
+  return $(selectors.CURRENT_REPOSITORY_NAME).getAttribute("value");
 }
 
 async function enterConfirmationText(user_name, repo_name) {

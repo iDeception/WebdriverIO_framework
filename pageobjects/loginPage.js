@@ -1,3 +1,5 @@
+import { browserHelper } from "../utils/browserHelper.js";
+
 const selectors = {
   LOGIN_BUTTON: '//a[@href="/login"]',
   EMAIL_FIELD: 'input[id="login_field"]',
@@ -8,10 +10,10 @@ const selectors = {
 async function login(login, password) {
   await browser.maximizeWindow();
   await browser.url("https://github.com");
-  await $(selectors.LOGIN_BUTTON).click();
-  await $(selectors.EMAIL_FIELD).setValue(login);
-  await $(selectors.PASSWORD_FIELD).setValue(password);
-  await $(selectors.SIGNIN_BUTTON).click();
+  await browserHelper(selectors.LOGIN_BUTTON).clickElement();
+  await browserHelper(selectors.EMAIL_FIELD).setValue(login);
+  await browserHelper(selectors.PASSWORD_FIELD).setValue(password);
+  await browserHelper(selectors.SIGNIN_BUTTON).clickElement();
 }
 
 const loginPage = { login };

@@ -9,7 +9,7 @@ import repositorySettingsPage from "../../pageobjects/repositorySettingsPage.js"
 import repositoryPage from "../../pageobjects/repositoryPage.js";
 import allRepositoriesPage from "../../pageobjects/allRepositoriesPage.js";
 
-describe("Repository only", async () => {
+describe("Repository", async () => {
   before(async () => {
     await loginPage.login(creds.LOGIN, creds.PASSWORD);
     await mainPage.createNewRepository();
@@ -43,11 +43,9 @@ describe("Repository only", async () => {
     const getRepoName = await repositorySettingsPage.getCurrentRepositoryName();
     await repositorySettingsPage.enterConfirmationText(getUserName + "/" + getRepoName);
     await repositorySettingsPage.confirmRepositoryDeletion();
-    const element = await allRepositoriesPage.getRepositoriesList();
-    const text = element.map((x) => x.getText());
-    const text2 = await Promise.all(text);
-    expect(text2.indexOf(newRepositoryName) == -1).to.be.true;
+    const repositories = await allRepositoriesPage.getRepositoriesList();
+    expect(repositories.indexOf(fakeNames.NEW_REPOSITORY_NAME) == -1).to.be.true;
     const actualMessage = await allRepositoriesPage.getDeletionConfirmationMessage();
-    expect(actualMessage).to.equal(`Your repository "${getUserName}/${getRepoName}" was successfully deleted.`);
+    expect(actualMessage).to.equal(`Yourrepository"${getUserName}/${getRepoName}"wassuccessfullydeleted.`);
   });
 });

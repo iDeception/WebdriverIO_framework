@@ -4,7 +4,7 @@ import mainPage from "../../pageobjects/mainPage.js";
 import creds from "../../testData/creds.js";
 const loggedinUser = "iDeception";
 
-describe("Login", async () => {
+describe("Login only", async () => {
   before(async () => {
     await loginPage.login(creds.LOGIN, creds.PASSWORD);
   });
