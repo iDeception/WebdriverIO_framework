@@ -16,5 +16,10 @@ export function browserHelper(selector, timeout = default_timeout) {
     const element = await findElement();
     await element.setValue(value);
   }
-  return { findElement, findElements, clickElement, setValue };
+  async function getElementText() {
+    const element = await findElement();
+    return element.getText();
+  }
+
+  return { findElement, findElements, clickElement, setValue, getElementText };
 }

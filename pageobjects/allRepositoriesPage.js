@@ -1,3 +1,4 @@
+import { browserHelper } from "../utils/browserHelper.js";
 import { cookString } from "../utils/cookString.js";
 
 const selectors = {
@@ -6,13 +7,13 @@ const selectors = {
 };
 
 async function getRepositoriesList() {
-  const allRepositories = await $$(selectors.LIST_OF_ALL_REPOSITORIES);
+  const allRepositories = await browserHelper(selectors.LIST_OF_ALL_REPOSITORIES).findElements();
   const text = await Promise.all(allRepositories);
   return text.map((x) => x.getText());
 }
 
 async function getDeletionConfirmationMessage() {
-  const message = await $(selectors.DELETION_CONFIRMATION_MESSAGE).getText();
+  const message = await browserHelper(selectors.DELETION_CONFIRMATION_MESSAGE).getElementText();
   return cookString(message);
 }
 

@@ -1,3 +1,5 @@
+import { browserHelper } from "../utils/browserHelper.js";
+
 const selectors = {
   REPOSITORY_NAME: 'input[id="repository_name"]',
   REPOSITORY_DESCRIPTION: 'input[id="repository_description"]',
@@ -6,20 +8,24 @@ const selectors = {
 };
 
 async function enterRepositoryName(name) {
-  await $(selectors.REPOSITORY_NAME).setValue(name);
+  browserHelper(selectors.REPOSITORY_NAME).setValue(name);
+  //await $(selectors.REPOSITORY_NAME).setValue(name);
 }
 
 async function enterRepositoryDescription(description) {
-  await $(selectors.REPOSITORY_DESCRIPTION).setValue(description);
+  browserHelper(selectors.REPOSITORY_DESCRIPTION).setValue(description);
+  //await $(selectors.REPOSITORY_DESCRIPTION).setValue(description);
 }
 
 async function clickReadmeCheckbox() {
-  await $(selectors.REPOSITORY_README_CHECKBOX).click();
+  browserHelper(selectors.REPOSITORY_README_CHECKBOX).clickElement();
+  //await $(selectors.REPOSITORY_README_CHECKBOX).click();
 }
 
 async function clickCreateRepository() {
-  await $(selectors.REPOSITORY_CREATE_BUTTON).waitForEnabled({ timeout: 2000 });
-  await $(selectors.REPOSITORY_CREATE_BUTTON).click();
+  browserHelper(selectors.REPOSITORY_CREATE_BUTTON).clickElement();
+  // await $(selectors.REPOSITORY_CREATE_BUTTON).waitForEnabled({ timeout: 2000 });
+  // await $(selectors.REPOSITORY_CREATE_BUTTON).click();
 }
 
 const createRepositoryPage = {
