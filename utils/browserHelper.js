@@ -20,6 +20,10 @@ export function browserHelper(selector, timeout = default_timeout) {
     const element = await findElement();
     return element.getText();
   }
+  async function getAttributeByName(attribute_name) {
+    const element = await findElement();
+    return element.getAttribute(attribute_name);
+  }
 
-  return { findElement, findElements, clickElement, setValue, getElementText };
+  return { findElement, findElements, clickElement, setValue, getElementText, getAttributeByName };
 }

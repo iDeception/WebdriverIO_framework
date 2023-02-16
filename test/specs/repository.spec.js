@@ -39,13 +39,13 @@ describe("Repository", async () => {
   it("Should delete repository and verify that it was deleted", async () => {
     await repositorySettingsPage.clickSettingsTab();
     await repositorySettingsPage.clickDeleteRepositoryButton();
-    const getUserName = await repositorySettingsPage.getActualUserName();
-    const getRepoName = await repositorySettingsPage.getCurrentRepositoryName();
-    await repositorySettingsPage.enterConfirmationText(getUserName + "/" + getRepoName);
+    const userName = await repositorySettingsPage.getActualUserName();
+    const repoName = await repositorySettingsPage.getCurrentRepositoryName();
+    await repositorySettingsPage.enterConfirmationText(userName, repoName);
     await repositorySettingsPage.confirmRepositoryDeletion();
     const repositories = await allRepositoriesPage.getRepositoriesList();
     expect(repositories.indexOf(fakeNames.NEW_REPOSITORY_NAME) == -1).to.be.true;
     const actualMessage = await allRepositoriesPage.getDeletionConfirmationMessage();
-    expect(actualMessage).to.equal(`Yourrepository"${getUserName}/${getRepoName}"wassuccessfullydeleted.`);
+    expect(actualMessage).to.equal(`Yourrepository"${userName}/${repoName}"wassuccessfullydeleted.`);
   });
 });

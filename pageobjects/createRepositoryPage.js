@@ -9,23 +9,18 @@ const selectors = {
 
 async function enterRepositoryName(name) {
   browserHelper(selectors.REPOSITORY_NAME).setValue(name);
-  //await $(selectors.REPOSITORY_NAME).setValue(name);
 }
 
 async function enterRepositoryDescription(description) {
   browserHelper(selectors.REPOSITORY_DESCRIPTION).setValue(description);
-  //await $(selectors.REPOSITORY_DESCRIPTION).setValue(description);
 }
 
 async function clickReadmeCheckbox() {
   browserHelper(selectors.REPOSITORY_README_CHECKBOX).clickElement();
-  //await $(selectors.REPOSITORY_README_CHECKBOX).click();
 }
 
 async function clickCreateRepository() {
   browserHelper(selectors.REPOSITORY_CREATE_BUTTON).clickElement();
-  // await $(selectors.REPOSITORY_CREATE_BUTTON).waitForEnabled({ timeout: 2000 });
-  // await $(selectors.REPOSITORY_CREATE_BUTTON).click();
 }
 
 const createRepositoryPage = {

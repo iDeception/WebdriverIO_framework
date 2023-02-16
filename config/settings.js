@@ -1,1 +1,1 @@
-export const default_timeout = 2000;
+export const default_timeout = 5000;

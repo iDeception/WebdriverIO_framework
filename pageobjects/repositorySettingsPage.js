@@ -1,3 +1,6 @@
+import { browserHelper } from "../utils/browserHelper.js";
+import { cookConfirmationText } from "../utils/cookConfirmationText.js";
+
 const selectors = {
   REPOSITORY_SETTINGS_TAB: '[id="settings-tab"]',
   REPOSITORY_RENAME_FIELD: '//input[@id="rename-field"]',
@@ -11,37 +14,36 @@ const selectors = {
 };
 
 async function clickSettingsTab() {
-  await $(selectors.REPOSITORY_SETTINGS_TAB).click();
+  await browserHelper(selectors.REPOSITORY_SETTINGS_TAB).clickElement();
 }
 
 async function enterNewRepositoryName(new_name) {
-  await $(selectors.REPOSITORY_RENAME_FIELD).setValue(new_name);
+  await browserHelper(selectors.REPOSITORY_RENAME_FIELD).setValue(new_name);
 }
 
 async function clickRenameButton() {
-  await $(selectors.REPOSITORY_RENAME_BUTTON).waitForEnabled({ timeout: 2000 });
-  await $(selectors.REPOSITORY_RENAME_BUTTON).click();
+  await browserHelper(selectors.REPOSITORY_RENAME_BUTTON).clickElement();
 }
 
 async function clickDeleteRepositoryButton() {
-  await $(selectors.DELETE_REPOSITORY_BUTTON).click();
-  await $(selectors.DELETE_REPOSITORY_DIALOG).waitForDisplayed({ timeout: 2000 });
+  await browserHelper(selectors.DELETE_REPOSITORY_BUTTON).clickElement();
 }
 
 async function getActualUserName() {
-  return $(selectors.CURRENT_USER_NAME).getText();
+  return browserHelper(selectors.CURRENT_USER_NAME).getElementText();
 }
 
 async function getCurrentRepositoryName() {
-  return $(selectors.CURRENT_REPOSITORY_NAME).getAttribute("value");
+  return browserHelper(selectors.CURRENT_REPOSITORY_NAME).getAttributeByName("value");
 }
 
 async function enterConfirmationText(user_name, repo_name) {
-  await $(selectors.DELETE_REPOSITORY_CONFIRMATION_FIELD).setValue(user_name, repo_name);
+  const confirmationText = cookConfirmationText(user_name, repo_name);
+  await browserHelper(selectors.DELETE_REPOSITORY_CONFIRMATION_FIELD).setValue(confirmationText);
 }
 
 async function confirmRepositoryDeletion() {
-  await $(selectors.CONFIRM_REPOSITORY_DELETION).click();
+  await browserHelper(selectors.CONFIRM_REPOSITORY_DELETION).clickElement();
 }
 
 const repositorySettingsPage = {
