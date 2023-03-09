@@ -5,6 +5,7 @@ const selectors = {
   USERNAME_FROM_DROPDOWN_MENU: '//strong[@class="css-truncate-target"]',
   NEW_REPOSITORY_BUTTON: '//div[@data-target="loading-context.details"]//a[@class="btn btn-sm btn-primary"]',
 };
+
 async function openDropdownMenu() {
   await browserHelper(selectors.DROPDOWN_MENU).clickElement();
 }

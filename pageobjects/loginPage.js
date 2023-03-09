@@ -2,8 +2,8 @@ import { browserHelper } from "../utils/browserHelper.js";
 
 const selectors = {
   LOGIN_BUTTON: '//a[@href="/login"]',
-  EMAIL_FIELD: 'input[id="login_field"]',
-  PASSWORD_FIELD: 'input[id="password"]',
+  EMAIL_FIELD: "#login_field",
+  PASSWORD_FIELD: "#password",
   SIGNIN_BUTTON: 'input[value = "Sign in"]',
 };
 

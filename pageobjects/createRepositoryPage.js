@@ -1,9 +1,9 @@
 import { browserHelper } from "../utils/browserHelper.js";
 
 const selectors = {
-  REPOSITORY_NAME: 'input[id="repository_name"]',
-  REPOSITORY_DESCRIPTION: 'input[id="repository_description"]',
-  REPOSITORY_README_CHECKBOX: 'input[id="repository_description"]',
+  REPOSITORY_NAME: "#repository_name",
+  REPOSITORY_DESCRIPTION: "#repository_description",
+  REPOSITORY_README_CHECKBOX: "#repository_description",
   REPOSITORY_CREATE_BUTTON: '//button[contains(text(),"Create repository")]',
 };
 

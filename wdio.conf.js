@@ -1,3 +1,6 @@
+import { logger } from "./utils/logger.js";
+import { logStatus, logTitle, LOG_START } from "./utils/logFormat.js";
+import { TEST_STATUS } from "./utils/constants/testStatus.js";
 export const config = {
   //
   // ====================
@@ -71,8 +74,8 @@ export const config = {
   // Define all options that are relevant for the WebdriverIO instance here
   //
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  logLevel: "info",
-  //
+  logLevel: "error",
+
   // Set specific log levels per logger
   // loggers:
   // - webdriver, webdriverio
@@ -296,4 +299,17 @@ export const config = {
    */
   // onReload: function(oldSessionId, newSessionId) {
   // }
+  beforeTest: function (test) {
+    logger.info(LOG_START);
+    logger.info(logTitle(test.parent));
+    logger.info(logTitle(test.title));
+  },
+  afterTest: async function (test, context, { error, result, duration, passed, retries }) {
+    if (passed) {
+      logger.info(logStatus(TEST_STATUS.PASSED));
+    } else {
+      logger.error(logStatus(TEST_STATUS.FAILED));
+      //await takeScreenshot();
+    }
+  },
 };

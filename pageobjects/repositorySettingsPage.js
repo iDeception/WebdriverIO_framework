@@ -2,8 +2,8 @@ import { browserHelper } from "../utils/browserHelper.js";
 import { cookConfirmationText } from "../utils/cookConfirmationText.js";
 
 const selectors = {
-  REPOSITORY_SETTINGS_TAB: '[id="settings-tab"]',
-  REPOSITORY_RENAME_FIELD: '//input[@id="rename-field"]',
+  REPOSITORY_SETTINGS_TAB: "#settings-tab",
+  REPOSITORY_RENAME_FIELD: "#rename-field",
   REPOSITORY_RENAME_BUTTON: '//button[@type="submit" and contains(text(),"Rename")]',
   DELETE_REPOSITORY_BUTTON: '//summary[contains(text(),"Delete this repository")]',
   DELETE_REPOSITORY_DIALOG: '//details-dialog[@aria-label="Delete repository"]',
