@@ -45,25 +45,19 @@ export function browserHelper(selector, timeout = default_timeout) {
 
   async function getElementText() {
     const getElementWithText = await findElement();
-    try {
-      if (getElementWithText) {
-        return element.getText();
-      }
-    } catch (error) {
-      logger.error(`Couldn't get text from element ${selector}`);
-      throw Error(error);
-    }
+    return getElementWithText.getText();
   }
 
   async function getAttributeByName(attribute_name) {
     const getElementWithAttribute = await findElement();
-    try {
-      if (getElementWithAttribute) {
-        return element.getAttribute(attribute_name);
+    let elementAttribute;
+    if (getElementWithAttribute) {
+      elementAttribute = await getElementWithAttribute.getAttribute(attribute_name);
+      if (!elementAttribute) {
+        logger.error(`Couldn't get attribute from element ${selector}`);
+        throw new Error(`Couldn't get attribute from element ${selector}`);
       }
-    } catch (error) {
-      logger.error(`Couldn't get attribute from element ${selector}`);
-      throw Error(error);
+      return elementAttribute;
     }
   }
 
