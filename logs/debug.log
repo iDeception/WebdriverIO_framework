@@ -1,0 +1,489 @@
+Invalid Date | INFO | ********************************************** START TEST **************************************************************
+Invalid Date | INFO | *************** Login ***************
+Invalid Date | INFO | *************** Shoud be correct user after login ***************
+Invalid Date | INFO | ********************************************** START TEST **************************************************************
+Invalid Date | INFO | *************** Repository ***************
+Invalid Date | INFO | *************** Should verify if a repository was created ***************
+Invalid Date | INFO | ********************************************** START TEST **************************************************************
+Invalid Date | INFO | *************** Repository ***************
+Invalid Date | INFO | *************** Should rename repository and verify that it was renamed ***************
+Invalid Date | INFO | ********************************************** START TEST **************************************************************
+Invalid Date | INFO | *************** Repository ***************
+Invalid Date | INFO | *************** Should delete repository and verify that it was deleted ***************
+2/28/2023, 5:08:17 PM | INFO | ********************************************** START TEST **************************************************************
+2/28/2023, 5:08:17 PM | INFO | *************** Login ***************
+2/28/2023, 5:08:17 PM | INFO | *************** Shoud be correct user after login ***************
+2/28/2023, 5:08:19 PM | INFO | ********************************************** START TEST **************************************************************
+2/28/2023, 5:08:19 PM | INFO | *************** Repository ***************
+2/28/2023, 5:08:19 PM | INFO | *************** Should verify if a repository was created ***************
+2/28/2023, 5:08:22 PM | INFO | ********************************************** START TEST **************************************************************
+2/28/2023, 5:08:22 PM | INFO | *************** Repository ***************
+2/28/2023, 5:08:22 PM | INFO | *************** Should rename repository and verify that it was renamed ***************
+2/28/2023, 5:08:25 PM | INFO | ********************************************** START TEST **************************************************************
+2/28/2023, 5:08:25 PM | INFO | *************** Repository ***************
+2/28/2023, 5:08:25 PM | INFO | *************** Should delete repository and verify that it was deleted ***************
+2/28/2023, 5:17:07 PM | INFO | ********************************************** START TEST **************************************************************
+2/28/2023, 5:17:07 PM | INFO | *************** Login ***************
+2/28/2023, 5:17:07 PM | INFO | *************** Shoud be correct user after login ***************
+2/28/2023, 5:17:07 PM | INFO | ******************** Test finished with status: PASSED ************************************
+2/28/2023, 5:17:09 PM | INFO | ********************************************** START TEST **************************************************************
+2/28/2023, 5:17:09 PM | INFO | *************** Repository ***************
+2/28/2023, 5:17:09 PM | INFO | *************** Should verify if a repository was created ***************
+2/28/2023, 5:17:12 PM | INFO | ******************** Test finished with status: PASSED ************************************
+2/28/2023, 5:17:12 PM | INFO | ********************************************** START TEST **************************************************************
+2/28/2023, 5:17:12 PM | INFO | *************** Repository ***************
+2/28/2023, 5:17:12 PM | INFO | *************** Should rename repository and verify that it was renamed ***************
+2/28/2023, 5:17:15 PM | INFO | ******************** Test finished with status: PASSED ************************************
+2/28/2023, 5:17:15 PM | INFO | ********************************************** START TEST **************************************************************
+2/28/2023, 5:17:15 PM | INFO | *************** Repository ***************
+2/28/2023, 5:17:15 PM | INFO | *************** Should delete repository and verify that it was deleted ***************
+2/28/2023, 5:17:18 PM | INFO | ******************** Test finished with status: PASSED ************************************
+28.02.2023, 17:17:54 | INFO | ********************************************** START TEST **************************************************************
+28.02.2023, 17:17:54 | INFO | *************** Login ***************
+28.02.2023, 17:17:54 | INFO | *************** Shoud be correct user after login ***************
+28.02.2023, 17:17:55 | INFO | ******************** Test finished with status: PASSED ************************************
+28.02.2023, 17:17:57 | INFO | ********************************************** START TEST **************************************************************
+28.02.2023, 17:17:57 | INFO | *************** Repository ***************
+28.02.2023, 17:17:57 | INFO | *************** Should verify if a repository was created ***************
+28.02.2023, 17:18:00 | INFO | ******************** Test finished with status: PASSED ************************************
+28.02.2023, 17:18:00 | INFO | ********************************************** START TEST **************************************************************
+28.02.2023, 17:18:00 | INFO | *************** Repository ***************
+28.02.2023, 17:18:00 | INFO | *************** Should rename repository and verify that it was renamed ***************
+28.02.2023, 17:18:03 | INFO | ******************** Test finished with status: PASSED ************************************
+28.02.2023, 17:18:03 | INFO | ********************************************** START TEST **************************************************************
+28.02.2023, 17:18:03 | INFO | *************** Repository ***************
+28.02.2023, 17:18:03 | INFO | *************** Should delete repository and verify that it was deleted ***************
+28.02.2023, 17:18:06 | INFO | ******************** Test finished with status: PASSED ************************************
+28.02.2023, 17:24:28 | INFO | ****** START TEST ******
+28.02.2023, 17:24:29 | INFO | ****** Login ******
+28.02.2023, 17:24:29 | INFO | ****** Shoud be correct user after login ******
+28.02.2023, 17:24:30 | INFO | ****** START TEST ******
+28.02.2023, 17:24:30 | INFO | ****** Repository ******
+28.02.2023, 17:24:30 | INFO | ****** Should verify if a repository was created ******
+28.02.2023, 17:24:33 | INFO | ****** Test finished with status: PASSED ******
+28.02.2023, 17:24:33 | INFO | ****** START TEST ******
+28.02.2023, 17:24:33 | INFO | ****** Repository ******
+28.02.2023, 17:24:33 | INFO | ****** Should rename repository and verify that it was renamed ******
+28.02.2023, 17:24:34 | ERROR | //strong[@class="css-truncate-targe"] wasn't displayed in 5000 ms
+28.02.2023, 17:24:34 | ERROR | ****** Test finished with status: FAILED ******
+28.02.2023, 17:24:37 | INFO | ****** Test finished with status: PASSED ******
+28.02.2023, 17:24:37 | INFO | ****** START TEST ******
+28.02.2023, 17:24:37 | INFO | ****** Repository ******
+28.02.2023, 17:24:37 | INFO | ****** Should delete repository and verify that it was deleted ******
+28.02.2023, 17:24:40 | INFO | ****** Test finished with status: PASSED ******
+02.03.2023, 16:40:31 | INFO | *** START TEST ***
+02.03.2023, 16:40:31 | INFO | *** Login ***
+02.03.2023, 16:40:31 | INFO | *** Shoud be correct user after login ***
+02.03.2023, 16:40:32 | INFO | *** Test executed with status: PASSED ***
+02.03.2023, 16:40:33 | INFO | *** START TEST ***
+02.03.2023, 16:40:33 | INFO | *** Repository ***
+02.03.2023, 16:40:33 | INFO | *** Should verify if a repository was created ***
+02.03.2023, 16:40:36 | INFO | *** Test executed with status: PASSED ***
+02.03.2023, 16:40:36 | INFO | *** START TEST ***
+02.03.2023, 16:40:36 | INFO | *** Repository ***
+02.03.2023, 16:40:36 | INFO | *** Should rename repository and verify that it was renamed ***
+02.03.2023, 16:40:39 | INFO | *** Test executed with status: PASSED ***
+02.03.2023, 16:40:39 | INFO | *** START TEST ***
+02.03.2023, 16:40:39 | INFO | *** Repository ***
+02.03.2023, 16:40:39 | INFO | *** Should delete repository and verify that it was deleted ***
+02.03.2023, 16:40:42 | INFO | *** Test executed with status: PASSED ***
+02.03.2023, 16:57:26 | INFO | *** START TEST ***
+02.03.2023, 16:57:26 | INFO | *** Login ***
+02.03.2023, 16:57:26 | INFO | *** Shoud be correct user after login ***
+02.03.2023, 16:57:27 | INFO | *** Test executed with status: PASSED ***
+02.03.2023, 16:57:27 | INFO | *** START TEST ***
+02.03.2023, 16:57:27 | INFO | *** Repository ***
+02.03.2023, 16:57:27 | INFO | *** Should verify if a repository was created ***
+02.03.2023, 16:57:30 | INFO | *** Test executed with status: PASSED ***
+02.03.2023, 16:57:30 | INFO | *** START TEST ***
+02.03.2023, 16:57:30 | INFO | *** Repository ***
+02.03.2023, 16:57:30 | INFO | *** Should rename repository and verify that it was renamed ***
+02.03.2023, 16:57:37 | ERROR | //button[@type="submi" and contains(text(),"Rename")] was not enabled in 5000 ms
+02.03.2023, 16:57:37 | ERROR | *** Test executed with status: FAILED ***
+02.03.2023, 16:57:37 | INFO | *** START TEST ***
+02.03.2023, 16:57:37 | INFO | *** Repository ***
+02.03.2023, 16:57:37 | INFO | *** Should delete repository and verify that it was deleted ***
+02.03.2023, 16:57:38 | INFO | *** Test executed with status: PASSED ***
+02.03.2023, 16:59:55 | INFO | *** START TEST ***
+02.03.2023, 16:59:55 | INFO | *** Repository ***
+02.03.2023, 16:59:55 | INFO | *** Should verify if a repository was created ***
+02.03.2023, 16:59:58 | INFO | *** Test executed with status: PASSED ***
+02.03.2023, 16:59:58 | INFO | *** START TEST ***
+02.03.2023, 16:59:58 | INFO | *** Repository ***
+02.03.2023, 16:59:58 | INFO | *** Should rename repository and verify that it was renamed ***
+02.03.2023, 17:00:04 | ERROR | //button[@type="submi" and contains(text(),"Rename")] was not enabled in 5000 ms
+02.03.2023, 17:00:04 | ERROR | *** Test executed with status: FAILED ***
+02.03.2023, 17:00:04 | INFO | *** START TEST ***
+02.03.2023, 17:00:04 | INFO | *** Repository ***
+02.03.2023, 17:00:04 | INFO | *** Should delete repository and verify that it was deleted ***
+02.03.2023, 17:00:06 | INFO | *** Test executed with status: PASSED ***
+02.03.2023, 17:01:04 | INFO | *** START TEST ***
+02.03.2023, 17:01:04 | INFO | *** Repository ***
+02.03.2023, 17:01:04 | INFO | *** Should verify if a repository was created ***
+02.03.2023, 17:01:07 | INFO | *** Test executed with status: PASSED ***
+02.03.2023, 17:01:07 | INFO | *** START TEST ***
+02.03.2023, 17:01:07 | INFO | *** Repository ***
+02.03.2023, 17:01:07 | INFO | *** Should rename repository and verify that it was renamed ***
+02.03.2023, 17:01:14 | ERROR | //button[@type="submi" and contains(text(),"Rename")] was not enabled in 5000 ms
+02.03.2023, 17:01:14 | ERROR | *** Test executed with status: FAILED ***
+02.03.2023, 17:01:14 | INFO | *** START TEST ***
+02.03.2023, 17:01:14 | INFO | *** Repository ***
+02.03.2023, 17:01:14 | INFO | *** Should delete repository and verify that it was deleted ***
+02.03.2023, 17:01:15 | INFO | *** Test executed with status: PASSED ***
+02.03.2023, 17:03:42 | INFO | *** START TEST ***
+02.03.2023, 17:03:42 | INFO | *** Repository ***
+02.03.2023, 17:03:42 | INFO | *** Should verify if a repository was created ***
+02.03.2023, 17:03:45 | INFO | *** Test executed with status: PASSED ***
+02.03.2023, 17:03:45 | INFO | *** START TEST ***
+02.03.2023, 17:03:45 | INFO | *** Repository ***
+02.03.2023, 17:03:45 | INFO | *** Should rename repository and verify that it was renamed ***
+02.03.2023, 17:03:51 | ERROR | //button[@type="submi" and contains(text(),"Rename")] was not enabled in 5000 ms
+02.03.2023, 17:03:51 | ERROR | *** Test executed with status: FAILED ***
+02.03.2023, 17:03:51 | INFO | *** START TEST ***
+02.03.2023, 17:03:51 | INFO | *** Repository ***
+02.03.2023, 17:03:51 | INFO | *** Should delete repository and verify that it was deleted ***
+02.03.2023, 17:03:53 | INFO | *** Test executed with status: PASSED ***
+03.03.2023, 15:27:41 | DEBUG | //a[@href="/login"] was clicked
+03.03.2023, 15:27:42 | DEBUG | //a[@href="/login"] was clicked
+03.03.2023, 15:27:42 | DEBUG | evgeni.samoilenka@gmail.com was set in #login_field
+03.03.2023, 15:27:42 | DEBUG | pkjqhjr3816 was set in #password
+03.03.2023, 15:27:43 | DEBUG | evgeni.samoilenka@gmail.com was set in #login_field
+03.03.2023, 15:27:43 | DEBUG | pkjqhjr3816 was set in #password
+03.03.2023, 15:27:44 | DEBUG | input[value = "Sign in"] was clicked
+03.03.2023, 15:27:44 | INFO | *** START TEST ***
+03.03.2023, 15:27:44 | INFO | *** Login ***
+03.03.2023, 15:27:44 | INFO | *** Shoud be correct user after login ***
+03.03.2023, 15:27:44 | DEBUG | //summary[@aria-label="View profile and more"] was clicked
+03.03.2023, 15:27:45 | DEBUG | input[value = "Sign in"] was clicked
+03.03.2023, 15:27:45 | INFO | *** Test executed with status: PASSED ***
+03.03.2023, 15:27:46 | DEBUG | //div[@data-target="loading-context.details"]//a[@class="btn btn-sm btn-primary"] was clicked
+03.03.2023, 15:27:46 | INFO | *** START TEST ***
+03.03.2023, 15:27:46 | INFO | *** Repository ***
+03.03.2023, 15:27:46 | INFO | *** Should verify if a repository was created ***
+03.03.2023, 15:27:46 | DEBUG | #repository_description was clicked
+03.03.2023, 15:27:47 | DEBUG | This is test repository! was set in #repository_description
+03.03.2023, 15:27:47 | DEBUG | tailspin was set in #repository_name
+03.03.2023, 15:27:49 | DEBUG | //button[contains(text(),"Create repository")] was clicked
+03.03.2023, 15:27:50 | INFO | *** Test executed with status: PASSED ***
+03.03.2023, 15:27:50 | INFO | *** START TEST ***
+03.03.2023, 15:27:50 | INFO | *** Repository ***
+03.03.2023, 15:27:50 | INFO | *** Should rename repository and verify that it was renamed ***
+03.03.2023, 15:27:50 | DEBUG | #settings-tab was clicked
+03.03.2023, 15:27:51 | DEBUG | barometer was set in #rename-field
+03.03.2023, 15:27:53 | DEBUG | //button[@type="submit" and contains(text(),"Rename")] was clicked
+03.03.2023, 15:27:53 | INFO | *** Test executed with status: PASSED ***
+03.03.2023, 15:27:53 | INFO | *** START TEST ***
+03.03.2023, 15:27:53 | INFO | *** Repository ***
+03.03.2023, 15:27:53 | INFO | *** Should delete repository and verify that it was deleted ***
+03.03.2023, 15:27:53 | DEBUG | #settings-tab was clicked
+03.03.2023, 15:27:54 | DEBUG | //summary[contains(text(),"Delete this repository")] was clicked
+03.03.2023, 15:27:54 | DEBUG | iDeception/barometer was set in //input[@aria-label="Type in the name of the repository to confirm that you want to delete this repository."]
+03.03.2023, 15:27:55 | DEBUG | //button[@class="btn-danger btn btn-block"][not(@disabled)] was clicked
+03.03.2023, 15:27:56 | INFO | *** Test executed with status: PASSED ***
+03.03.2023, 15:29:06 | DEBUG | //a[@href="/login"] was clicked
+03.03.2023, 15:29:07 | DEBUG | evgeni.samoilenka@gmail.com was set in #login_field
+03.03.2023, 15:29:07 | DEBUG | pkjqhjr3816 was set in #password
+03.03.2023, 15:29:09 | DEBUG | input[value = "Sign in"] was clicked
+03.03.2023, 15:29:10 | DEBUG | //div[@data-target="loading-context.details"]//a[@class="btn btn-sm btn-primary"] was clicked
+03.03.2023, 15:29:10 | INFO | *** START TEST ***
+03.03.2023, 15:29:10 | INFO | *** Repository ***
+03.03.2023, 15:29:10 | INFO | *** Should verify if a repository was created ***
+03.03.2023, 15:29:10 | DEBUG | #repository_description was clicked
+03.03.2023, 15:29:10 | DEBUG | This is test repository! was set in #repository_description
+03.03.2023, 15:29:10 | DEBUG | rudiment was set in #repository_name
+03.03.2023, 15:29:13 | DEBUG | //button[contains(text(),"Create repository")] was clicked
+03.03.2023, 15:29:13 | INFO | *** Test executed with status: PASSED ***
+03.03.2023, 15:29:13 | INFO | *** START TEST ***
+03.03.2023, 15:29:13 | INFO | *** Repository ***
+03.03.2023, 15:29:13 | INFO | *** Should rename repository and verify that it was renamed ***
+03.03.2023, 15:29:13 | DEBUG | #settings-tab was clicked
+03.03.2023, 15:29:14 | DEBUG | timetable was set in #rename-field
+03.03.2023, 15:29:16 | DEBUG | //button[@type="submit" and contains(text(),"Rename")] was clicked
+03.03.2023, 15:29:16 | INFO | *** Test executed with status: PASSED ***
+03.03.2023, 15:29:16 | INFO | *** START TEST ***
+03.03.2023, 15:29:16 | INFO | *** Repository ***
+03.03.2023, 15:29:16 | INFO | *** Should delete repository and verify that it was deleted ***
+03.03.2023, 15:29:16 | DEBUG | #settings-tab was clicked
+03.03.2023, 15:29:17 | DEBUG | //summary[contains(text(),"Delete this repository")] was clicked
+03.03.2023, 15:29:17 | DEBUG | iDeception/timetable was set in //input[@aria-label="Type in the name of the repository to confirm that you want to delete this repository."]
+03.03.2023, 15:29:19 | DEBUG | //button[@class="btn-danger btn btn-block"][not(@disabled)] was clicked
+03.03.2023, 15:29:19 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 14:55:05 | DEBUG | //a[@href="/login"] was clicked
+09.03.2023, 14:55:06 | DEBUG | evgeni.samoilenka@gmail.com was set in #login_field
+09.03.2023, 14:55:06 | DEBUG | pkjqhjr3816 was set in #password
+09.03.2023, 14:55:07 | DEBUG | input[value = "Sign in"] was clicked
+09.03.2023, 14:55:08 | DEBUG | //div[@data-target="loading-context.details"]//a[@class="btn btn-sm btn-primary"] was clicked
+09.03.2023, 14:55:08 | INFO | *** START TEST ***
+09.03.2023, 14:55:08 | INFO | *** Repository ***
+09.03.2023, 14:55:08 | INFO | *** Should verify if a repository was created ***
+09.03.2023, 14:55:09 | DEBUG | #repository_description was clicked
+09.03.2023, 14:55:09 | DEBUG | This is test repository! was set in #repository_description
+09.03.2023, 14:55:09 | DEBUG | monument was set in #repository_name
+09.03.2023, 14:55:12 | DEBUG | //button[contains(text(),"Create repository")] was clicked
+09.03.2023, 14:55:12 | ERROR | Couldn't get text from element //strong[@itemprop="name"]/a[@href]
+09.03.2023, 14:55:12 | ERROR | *** Test executed with status: FAILED ***
+09.03.2023, 14:55:12 | INFO | *** START TEST ***
+09.03.2023, 14:55:12 | INFO | *** Repository ***
+09.03.2023, 14:55:12 | INFO | *** Should rename repository and verify that it was renamed ***
+09.03.2023, 14:55:12 | DEBUG | #settings-tab was clicked
+09.03.2023, 14:55:13 | DEBUG | essential was set in #rename-field
+09.03.2023, 14:55:15 | DEBUG | //button[@type="submit" and contains(text(),"Rename")] was clicked
+09.03.2023, 14:55:15 | ERROR | Couldn't get text from element //strong[@itemprop="name"]/a[@href]
+09.03.2023, 14:55:15 | ERROR | *** Test executed with status: FAILED ***
+09.03.2023, 14:55:15 | INFO | *** START TEST ***
+09.03.2023, 14:55:15 | INFO | *** Repository ***
+09.03.2023, 14:55:15 | INFO | *** Should delete repository and verify that it was deleted ***
+09.03.2023, 14:55:15 | DEBUG | #settings-tab was clicked
+09.03.2023, 14:55:16 | DEBUG | //summary[contains(text(),"Delete this repository")] was clicked
+09.03.2023, 14:55:16 | ERROR | Couldn't get text from element //a[@class="url fn"]
+09.03.2023, 14:55:16 | ERROR | *** Test executed with status: FAILED ***
+09.03.2023, 14:59:19 | DEBUG | //a[@href="/login"] was clicked
+09.03.2023, 14:59:19 | DEBUG | evgeni.samoilenka@gmail.com was set in #login_field
+09.03.2023, 14:59:20 | DEBUG | pkjqhjr3816 was set in #password
+09.03.2023, 14:59:21 | DEBUG | input[value = "Sign in"] was clicked
+09.03.2023, 14:59:22 | DEBUG | //div[@data-target="loading-context.details"]//a[@class="btn btn-sm btn-primary"] was clicked
+09.03.2023, 14:59:22 | INFO | *** START TEST ***
+09.03.2023, 14:59:22 | INFO | *** Repository ***
+09.03.2023, 14:59:22 | INFO | *** Should verify if a repository was created ***
+09.03.2023, 14:59:23 | DEBUG | #repository_description was clicked
+09.03.2023, 14:59:23 | DEBUG | This is test repository! was set in #repository_description
+09.03.2023, 14:59:23 | DEBUG | milepost was set in #repository_name
+09.03.2023, 14:59:26 | DEBUG | //button[contains(text(),"Create repository")] was clicked
+09.03.2023, 14:59:26 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 14:59:26 | INFO | *** START TEST ***
+09.03.2023, 14:59:26 | INFO | *** Repository ***
+09.03.2023, 14:59:26 | INFO | *** Should rename repository and verify that it was renamed ***
+09.03.2023, 14:59:26 | DEBUG | #settings-tab was clicked
+09.03.2023, 14:59:27 | DEBUG | probation was set in #rename-field
+09.03.2023, 14:59:29 | DEBUG | //button[@type="submit" and contains(text(),"Rename")] was clicked
+09.03.2023, 14:59:29 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 14:59:29 | INFO | *** START TEST ***
+09.03.2023, 14:59:29 | INFO | *** Repository ***
+09.03.2023, 14:59:29 | INFO | *** Should delete repository and verify that it was deleted ***
+09.03.2023, 14:59:29 | DEBUG | #settings-tab was clicked
+09.03.2023, 14:59:30 | DEBUG | //summary[contains(text(),"Delete this repository")] was clicked
+09.03.2023, 14:59:30 | ERROR | Couldn't get attribute from element //summary[contains(text(),"Delete this repository")]
+09.03.2023, 14:59:30 | ERROR | *** Test executed with status: FAILED ***
+09.03.2023, 15:02:51 | DEBUG | //a[@href="/login"] was clicked
+09.03.2023, 15:02:51 | DEBUG | evgeni.samoilenka@gmail.com was set in #login_field
+09.03.2023, 15:02:51 | DEBUG | pkjqhjr3816 was set in #password
+09.03.2023, 15:02:53 | DEBUG | input[value = "Sign in"] was clicked
+09.03.2023, 15:02:54 | DEBUG | //div[@data-target="loading-context.details"]//a[@class="btn btn-sm btn-primary"] was clicked
+09.03.2023, 15:02:54 | INFO | *** START TEST ***
+09.03.2023, 15:02:54 | INFO | *** Repository ***
+09.03.2023, 15:02:54 | INFO | *** Should verify if a repository was created ***
+09.03.2023, 15:02:54 | DEBUG | #repository_description was clicked
+09.03.2023, 15:02:54 | DEBUG | This is test repository! was set in #repository_description
+09.03.2023, 15:02:54 | DEBUG | pamphlet was set in #repository_name
+09.03.2023, 15:02:57 | DEBUG | //button[contains(text(),"Create repository")] was clicked
+09.03.2023, 15:02:57 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 15:02:57 | INFO | *** START TEST ***
+09.03.2023, 15:02:57 | INFO | *** Repository ***
+09.03.2023, 15:02:57 | INFO | *** Should rename repository and verify that it was renamed ***
+09.03.2023, 15:02:58 | DEBUG | #settings-tab was clicked
+09.03.2023, 15:02:59 | DEBUG | buckwheat was set in #rename-field
+09.03.2023, 15:03:01 | DEBUG | //button[@type="submit" and contains(text(),"Rename")] was clicked
+09.03.2023, 15:03:01 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 15:03:01 | INFO | *** START TEST ***
+09.03.2023, 15:03:01 | INFO | *** Repository ***
+09.03.2023, 15:03:01 | INFO | *** Should delete repository and verify that it was deleted ***
+09.03.2023, 15:03:01 | DEBUG | #settings-tab was clicked
+09.03.2023, 15:03:02 | DEBUG | //summary[contains(text(),"Delete this repository")] was clicked
+09.03.2023, 15:03:02 | DEBUG | iDeception/null was set in //input[@aria-label="Type in the name of the repository to confirm that you want to delete this repository."]
+09.03.2023, 15:03:07 | ERROR | //button[@class="btn-danger btn btn-block"][not(@disabled)] was not enabled in 5000 ms
+09.03.2023, 15:03:07 | ERROR | *** Test executed with status: FAILED ***
+09.03.2023, 15:03:44 | DEBUG | //a[@href="/login"] was clicked
+09.03.2023, 15:03:45 | DEBUG | evgeni.samoilenka@gmail.com was set in #login_field
+09.03.2023, 15:03:45 | DEBUG | pkjqhjr3816 was set in #password
+09.03.2023, 15:03:46 | DEBUG | input[value = "Sign in"] was clicked
+09.03.2023, 15:03:48 | DEBUG | //div[@data-target="loading-context.details"]//a[@class="btn btn-sm btn-primary"] was clicked
+09.03.2023, 15:03:48 | INFO | *** START TEST ***
+09.03.2023, 15:03:48 | INFO | *** Repository ***
+09.03.2023, 15:03:48 | INFO | *** Should verify if a repository was created ***
+09.03.2023, 15:03:48 | DEBUG | #repository_description was clicked
+09.03.2023, 15:03:48 | DEBUG | This is test repository! was set in #repository_description
+09.03.2023, 15:03:48 | DEBUG | mangrove was set in #repository_name
+09.03.2023, 15:03:51 | DEBUG | //button[contains(text(),"Create repository")] was clicked
+09.03.2023, 15:03:51 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 15:03:51 | INFO | *** START TEST ***
+09.03.2023, 15:03:51 | INFO | *** Repository ***
+09.03.2023, 15:03:51 | INFO | *** Should rename repository and verify that it was renamed ***
+09.03.2023, 15:03:51 | DEBUG | #settings-tab was clicked
+09.03.2023, 15:03:52 | DEBUG | escalator was set in #rename-field
+09.03.2023, 15:03:54 | DEBUG | //button[@type="submit" and contains(text(),"Rename")] was clicked
+09.03.2023, 15:03:54 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 15:03:54 | INFO | *** START TEST ***
+09.03.2023, 15:03:54 | INFO | *** Repository ***
+09.03.2023, 15:03:54 | INFO | *** Should delete repository and verify that it was deleted ***
+09.03.2023, 15:03:54 | DEBUG | #settings-tab was clicked
+09.03.2023, 15:03:55 | DEBUG | //summary[contains(text(),"Delete this repository")] was clicked
+09.03.2023, 15:03:55 | DEBUG | iDeception/null was set in //input[@aria-label="Type in the name of the repository to confirm that you want to delete this repository."]
+09.03.2023, 15:04:00 | ERROR | //button[@class="btn-danger btn btn-block"][not(@disabled)] was not enabled in 5000 ms
+09.03.2023, 15:04:00 | ERROR | *** Test executed with status: FAILED ***
+09.03.2023, 15:36:54 | DEBUG | //a[@href="/login"] was clicked
+09.03.2023, 15:36:56 | DEBUG | evgeni.samoilenka@gmail.com was set in #login_field
+09.03.2023, 15:36:56 | DEBUG | pkjqhjr3816 was set in #password
+09.03.2023, 15:36:57 | DEBUG | input[value = "Sign in"] was clicked
+09.03.2023, 15:36:59 | DEBUG | //div[@data-target="loading-context.details"]//a[@class="btn btn-sm btn-primary"] was clicked
+09.03.2023, 15:36:59 | INFO | *** START TEST ***
+09.03.2023, 15:36:59 | INFO | *** Repository ***
+09.03.2023, 15:36:59 | INFO | *** Should verify if a repository was created ***
+09.03.2023, 15:36:59 | DEBUG | #repository_description was clicked
+09.03.2023, 15:36:59 | DEBUG | This is test repository! was set in #repository_description
+09.03.2023, 15:36:59 | DEBUG | response was set in #repository_name
+09.03.2023, 15:37:02 | DEBUG | //button[contains(text(),"Create repository")] was clicked
+09.03.2023, 15:37:03 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 15:37:03 | INFO | *** START TEST ***
+09.03.2023, 15:37:03 | INFO | *** Repository ***
+09.03.2023, 15:37:03 | INFO | *** Should rename repository and verify that it was renamed ***
+09.03.2023, 15:37:03 | DEBUG | #settings-tab was clicked
+09.03.2023, 15:37:04 | DEBUG | consulate was set in #rename-field
+09.03.2023, 15:37:05 | DEBUG | //button[@type="submit" and contains(text(),"Rename")] was clicked
+09.03.2023, 15:37:06 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 15:37:06 | INFO | *** START TEST ***
+09.03.2023, 15:37:06 | INFO | *** Repository ***
+09.03.2023, 15:37:06 | INFO | *** Should delete repository and verify that it was deleted ***
+09.03.2023, 15:37:06 | DEBUG | #settings-tab was clicked
+09.03.2023, 15:37:06 | DEBUG | //summary[contains(text(),"Delete this repository")] was clicked
+09.03.2023, 15:37:07 | DEBUG | iDeception/null was set in //input[@aria-label="Type in the name of the repository to confirm that you want to delete this repository."]
+09.03.2023, 15:37:12 | ERROR | //button[@class="btn-danger btn btn-block"][not(@disabled)] was not enabled in 5000 ms
+09.03.2023, 15:37:12 | ERROR | *** Test executed with status: FAILED ***
+09.03.2023, 15:37:58 | DEBUG | //a[@href="/login"] was clicked
+09.03.2023, 15:37:59 | DEBUG | evgeni.samoilenka@gmail.com was set in #login_field
+09.03.2023, 15:37:59 | DEBUG | pkjqhjr3816 was set in #password
+09.03.2023, 15:38:01 | DEBUG | input[value = "Sign in"] was clicked
+09.03.2023, 15:38:02 | DEBUG | //div[@data-target="loading-context.details"]//a[@class="btn btn-sm btn-primary"] was clicked
+09.03.2023, 15:38:02 | INFO | *** START TEST ***
+09.03.2023, 15:38:02 | INFO | *** Repository ***
+09.03.2023, 15:38:02 | INFO | *** Should verify if a repository was created ***
+09.03.2023, 15:38:03 | DEBUG | #repository_description was clicked
+09.03.2023, 15:38:03 | DEBUG | This is test repository! was set in #repository_description
+09.03.2023, 15:38:03 | DEBUG | ambience was set in #repository_name
+09.03.2023, 15:38:06 | DEBUG | //button[contains(text(),"Create repository")] was clicked
+09.03.2023, 15:38:06 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 15:38:06 | INFO | *** START TEST ***
+09.03.2023, 15:38:06 | INFO | *** Repository ***
+09.03.2023, 15:38:06 | INFO | *** Should rename repository and verify that it was renamed ***
+09.03.2023, 15:38:06 | DEBUG | #settings-tab was clicked
+09.03.2023, 15:38:07 | DEBUG | evaluator was set in #rename-field
+09.03.2023, 15:38:09 | DEBUG | //button[@type="submit" and contains(text(),"Rename")] was clicked
+09.03.2023, 15:38:09 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 15:38:09 | INFO | *** START TEST ***
+09.03.2023, 15:38:09 | INFO | *** Repository ***
+09.03.2023, 15:38:09 | INFO | *** Should delete repository and verify that it was deleted ***
+09.03.2023, 15:38:09 | DEBUG | #settings-tab was clicked
+09.03.2023, 15:38:11 | DEBUG | //summary[contains(text(),"Delete this repository")] was clicked
+09.03.2023, 15:38:11 | DEBUG | iDeception/null was set in //input[@aria-label="Type in the name of the repository to confirm that you want to delete this repository."]
+09.03.2023, 15:38:16 | ERROR | //button[@class="btn-danger btn btn-block"][not(@disabled)] was not enabled in 5000 ms
+09.03.2023, 15:38:16 | ERROR | *** Test executed with status: FAILED ***
+09.03.2023, 15:41:04 | DEBUG | //a[@href="/login"] was clicked
+09.03.2023, 15:41:05 | DEBUG | evgeni.samoilenka@gmail.com was set in #login_field
+09.03.2023, 15:41:05 | DEBUG | pkjqhjr3816 was set in #password
+09.03.2023, 15:41:07 | DEBUG | input[value = "Sign in"] was clicked
+09.03.2023, 15:41:09 | DEBUG | //div[@data-target="loading-context.details"]//a[@class="btn btn-sm btn-primary"] was clicked
+09.03.2023, 15:41:09 | INFO | *** START TEST ***
+09.03.2023, 15:41:09 | INFO | *** Repository ***
+09.03.2023, 15:41:09 | INFO | *** Should verify if a repository was created ***
+09.03.2023, 15:41:09 | DEBUG | #repository_description was clicked
+09.03.2023, 15:41:09 | DEBUG | This is test repository! was set in #repository_description
+09.03.2023, 15:41:09 | DEBUG | vacation was set in #repository_name
+09.03.2023, 15:41:12 | DEBUG | //button[contains(text(),"Create repository")] was clicked
+09.03.2023, 15:41:12 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 15:41:12 | INFO | *** START TEST ***
+09.03.2023, 15:41:12 | INFO | *** Repository ***
+09.03.2023, 15:41:12 | INFO | *** Should rename repository and verify that it was renamed ***
+09.03.2023, 15:41:12 | DEBUG | #settings-tab was clicked
+09.03.2023, 15:41:13 | DEBUG | recession was set in #rename-field
+09.03.2023, 15:41:15 | DEBUG | //button[@type="submit" and contains(text(),"Rename")] was clicked
+09.03.2023, 15:41:15 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 15:41:15 | INFO | *** START TEST ***
+09.03.2023, 15:41:15 | INFO | *** Repository ***
+09.03.2023, 15:41:15 | INFO | *** Should delete repository and verify that it was deleted ***
+09.03.2023, 15:41:15 | DEBUG | #settings-tab was clicked
+09.03.2023, 15:41:16 | DEBUG | //summary[contains(text(),"Delete this repository")] was clicked
+09.03.2023, 15:41:16 | DEBUG | iDeception/null was set in //input[@aria-label="Type in the name of the repository to confirm that you want to delete this repository."]
+09.03.2023, 15:41:21 | ERROR | //button[@class="btn-danger btn btn-block"][not(@disabled)] was not enabled in 5000 ms
+09.03.2023, 15:41:21 | ERROR | *** Test executed with status: FAILED ***
+09.03.2023, 15:42:26 | DEBUG | //a[@href="/login"] was clicked
+09.03.2023, 15:42:27 | DEBUG | evgeni.samoilenka@gmail.com was set in #login_field
+09.03.2023, 15:42:28 | DEBUG | pkjqhjr3816 was set in #password
+09.03.2023, 15:42:29 | DEBUG | input[value = "Sign in"] was clicked
+09.03.2023, 15:42:31 | DEBUG | //div[@data-target="loading-context.details"]//a[@class="btn btn-sm btn-primary"] was clicked
+09.03.2023, 15:42:31 | INFO | *** START TEST ***
+09.03.2023, 15:42:31 | INFO | *** Repository ***
+09.03.2023, 15:42:31 | INFO | *** Should verify if a repository was created ***
+09.03.2023, 15:42:31 | DEBUG | #repository_description was clicked
+09.03.2023, 15:42:31 | DEBUG | This is test repository! was set in #repository_description
+09.03.2023, 15:42:31 | DEBUG | macaroon was set in #repository_name
+09.03.2023, 15:42:34 | DEBUG | //button[contains(text(),"Create repository")] was clicked
+09.03.2023, 15:42:35 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 15:42:35 | INFO | *** START TEST ***
+09.03.2023, 15:42:35 | INFO | *** Repository ***
+09.03.2023, 15:42:35 | INFO | *** Should rename repository and verify that it was renamed ***
+09.03.2023, 15:42:35 | DEBUG | #settings-tab was clicked
+09.03.2023, 15:42:36 | DEBUG | tomatillo was set in #rename-field
+09.03.2023, 15:42:37 | DEBUG | //button[@type="submit" and contains(text(),"Rename")] was clicked
+09.03.2023, 15:42:38 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 15:42:38 | INFO | *** START TEST ***
+09.03.2023, 15:42:38 | INFO | *** Repository ***
+09.03.2023, 15:42:38 | INFO | *** Should delete repository and verify that it was deleted ***
+09.03.2023, 15:42:38 | DEBUG | #settings-tab was clicked
+09.03.2023, 15:42:38 | DEBUG | //summary[contains(text(),"Delete this repository")] was clicked
+09.03.2023, 15:42:39 | DEBUG | iDeception/null was set in //input[@aria-label="Type in the name of the repository to confirm that you want to delete this repository."]
+09.03.2023, 15:42:44 | ERROR | //button[@class="btn-danger btn btn-block"][not(@disabled)] was not enabled in 5000 ms
+09.03.2023, 15:42:44 | ERROR | *** Test executed with status: FAILED ***
+09.03.2023, 15:43:33 | DEBUG | //a[@href="/login"] was clicked
+09.03.2023, 15:43:34 | DEBUG | evgeni.samoilenka@gmail.com was set in #login_field
+09.03.2023, 15:43:34 | DEBUG | pkjqhjr3816 was set in #password
+09.03.2023, 15:43:36 | DEBUG | input[value = "Sign in"] was clicked
+09.03.2023, 15:43:37 | DEBUG | //div[@data-target="loading-context.details"]//a[@class="btn btn-sm btn-primary"] was clicked
+09.03.2023, 15:43:37 | INFO | *** START TEST ***
+09.03.2023, 15:43:37 | INFO | *** Repository ***
+09.03.2023, 15:43:37 | INFO | *** Should verify if a repository was created ***
+09.03.2023, 15:43:38 | DEBUG | #repository_description was clicked
+09.03.2023, 15:43:38 | DEBUG | This is test repository! was set in #repository_description
+09.03.2023, 15:43:38 | DEBUG | meatloaf was set in #repository_name
+09.03.2023, 15:43:41 | DEBUG | //button[contains(text(),"Create repository")] was clicked
+09.03.2023, 15:43:41 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 15:43:41 | INFO | *** START TEST ***
+09.03.2023, 15:43:41 | INFO | *** Repository ***
+09.03.2023, 15:43:41 | INFO | *** Should rename repository and verify that it was renamed ***
+09.03.2023, 15:43:41 | DEBUG | #settings-tab was clicked
+09.03.2023, 15:43:42 | DEBUG | regulator was set in #rename-field
+09.03.2023, 15:43:44 | DEBUG | //button[@type="submit" and contains(text(),"Rename")] was clicked
+09.03.2023, 15:43:44 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 15:43:44 | INFO | *** START TEST ***
+09.03.2023, 15:43:44 | INFO | *** Repository ***
+09.03.2023, 15:43:44 | INFO | *** Should delete repository and verify that it was deleted ***
+09.03.2023, 15:43:44 | DEBUG | #settings-tab was clicked
+09.03.2023, 15:43:45 | DEBUG | //summary[contains(text(),"Delete this repository")] was clicked
+09.03.2023, 15:43:45 | ERROR | Couldn't get attribute from element //h2[contains(text(),"General")]
+09.03.2023, 15:43:45 | ERROR | *** Test executed with status: FAILED ***
+09.03.2023, 15:46:56 | DEBUG | //a[@href="/login"] was clicked
+09.03.2023, 15:46:57 | DEBUG | evgeni.samoilenka@gmail.com was set in #login_field
+09.03.2023, 15:46:57 | DEBUG | pkjqhjr3816 was set in #password
+09.03.2023, 15:46:59 | DEBUG | input[value = "Sign in"] was clicked
+09.03.2023, 15:47:00 | DEBUG | //div[@data-target="loading-context.details"]//a[@class="btn btn-sm btn-primary"] was clicked
+09.03.2023, 15:47:00 | INFO | *** START TEST ***
+09.03.2023, 15:47:00 | INFO | *** Repository ***
+09.03.2023, 15:47:00 | INFO | *** Should verify if a repository was created ***
+09.03.2023, 15:47:01 | DEBUG | #repository_description was clicked
+09.03.2023, 15:47:01 | DEBUG | This is test repository! was set in #repository_description
+09.03.2023, 15:47:01 | DEBUG | function was set in #repository_name
+09.03.2023, 15:47:04 | DEBUG | //button[contains(text(),"Create repository")] was clicked
+09.03.2023, 15:47:04 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 15:47:04 | INFO | *** START TEST ***
+09.03.2023, 15:47:04 | INFO | *** Repository ***
+09.03.2023, 15:47:04 | INFO | *** Should rename repository and verify that it was renamed ***
+09.03.2023, 15:47:04 | DEBUG | #settings-tab was clicked
+09.03.2023, 15:47:05 | DEBUG | incentive was set in #rename-field
+09.03.2023, 15:47:07 | DEBUG | //button[@type="submit" and contains(text(),"Rename")] was clicked
+09.03.2023, 15:47:07 | INFO | *** Test executed with status: PASSED ***
+09.03.2023, 15:47:07 | INFO | *** START TEST ***
+09.03.2023, 15:47:07 | INFO | *** Repository ***
+09.03.2023, 15:47:07 | INFO | *** Should delete repository and verify that it was deleted ***
+09.03.2023, 15:47:08 | DEBUG | #settings-tab was clicked
+09.03.2023, 15:47:09 | DEBUG | //summary[contains(text(),"Delete this repository")] was clicked
+09.03.2023, 15:47:09 | DEBUG | iDeception/incentive was set in //input[@aria-label="Type in the name of the repository to confirm that you want to delete this repository."]
+09.03.2023, 15:47:11 | DEBUG | //button[@class="btn-danger btn btn-block"][not(@disabled)] was clicked
+09.03.2023, 15:47:11 | INFO | *** Test executed with status: PASSED ***
