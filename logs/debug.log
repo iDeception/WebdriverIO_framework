@@ -533,3 +533,40 @@ Invalid Date | INFO | *************** Should delete repository and verify that i
 21.03.2023, 12:55:25 | INFO | *** Shoud be correct user after login ***
 21.03.2023, 12:55:25 | DEBUG | //summary[@aria-label="View profile and more"] was clicked
 21.03.2023, 12:55:26 | INFO | *** Test executed with status: PASSED ***
+31.03.2023, 19:36:07 | DEBUG | //a[@href="/login"] was clicked
+31.03.2023, 19:36:08 | DEBUG | evgeni.samoilenka@gmail.com was set in #login_field
+31.03.2023, 19:36:08 | DEBUG | pkjqhjr3816 was set in #password
+31.03.2023, 19:36:09 | DEBUG | input[value = "Sign in"] was clicked
+31.03.2023, 19:36:09 | INFO | *** START TEST ***
+31.03.2023, 19:36:09 | INFO | *** Login ***
+31.03.2023, 19:36:09 | INFO | *** Shoud be correct user after login ***
+31.03.2023, 19:36:09 | DEBUG | //summary[@aria-label="View profile and more"] was clicked
+31.03.2023, 19:36:10 | INFO | *** Test executed with status: PASSED ***
+31.03.2023, 19:36:45 | DEBUG | //a[@href="/login"] was clicked
+31.03.2023, 19:36:46 | DEBUG | evgeni.samoilenka@gmail.com was set in #login_field
+31.03.2023, 19:36:46 | DEBUG | pkjqhjr3816 was set in #password
+31.03.2023, 19:36:47 | DEBUG | input[value = "Sign in"] was clicked
+31.03.2023, 19:36:48 | DEBUG | //div[@data-target="loading-context.details"]//a[@class="btn btn-sm btn-primary"] was clicked
+31.03.2023, 19:36:48 | INFO | *** START TEST ***
+31.03.2023, 19:36:48 | INFO | *** Repository ***
+31.03.2023, 19:36:48 | INFO | *** Should verify if a repository was created ***
+31.03.2023, 19:36:48 | DEBUG | #repository_description was clicked
+31.03.2023, 19:36:48 | DEBUG | This is test repository! was set in #repository_description
+31.03.2023, 19:36:48 | DEBUG | countess was set in #repository_name
+31.03.2023, 19:36:51 | DEBUG | //button[contains(text(),"Create repository")] was clicked
+31.03.2023, 19:36:51 | INFO | *** Test executed with status: PASSED ***
+31.03.2023, 19:36:51 | INFO | *** START TEST ***
+31.03.2023, 19:36:51 | INFO | *** Repository ***
+31.03.2023, 19:36:51 | INFO | *** Should rename repository and verify that it was renamed ***
+31.03.2023, 19:36:51 | DEBUG | #settings-tab was clicked
+31.03.2023, 19:36:52 | DEBUG | melatonin was set in #rename-field
+31.03.2023, 19:36:54 | DEBUG | //button[@type="submit" and contains(text(),"Rename")] was clicked
+31.03.2023, 19:36:54 | INFO | *** Test executed with status: PASSED ***
+31.03.2023, 19:36:54 | INFO | *** START TEST ***
+31.03.2023, 19:36:54 | INFO | *** Repository ***
+31.03.2023, 19:36:54 | INFO | *** Should delete repository and verify that it was deleted ***
+31.03.2023, 19:36:54 | DEBUG | #settings-tab was clicked
+31.03.2023, 19:36:55 | DEBUG | //summary[contains(text(),"Delete this repository")] was clicked
+31.03.2023, 19:36:55 | DEBUG | iDeception/melatonin was set in //input[@aria-label="Type in the name of the repository to confirm that you want to delete this repository."]
+31.03.2023, 19:36:57 | DEBUG | //button[@class="btn-danger btn btn-block"][not(@disabled)] was clicked
+31.03.2023, 19:36:57 | INFO | *** Test executed with status: PASSED ***
